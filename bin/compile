@@ -147,7 +147,8 @@ fi
   fi
 
   status "Installing dependencies"
-  ls -l /app/.apt/usr/lib
+  pwd
+  ls -l
   # Make npm output to STDOUT instead of its default STDERR
   npm install --loglevel verbose --userconfig $build_dir/.npmrc --production 2>&1 | indent
 )
